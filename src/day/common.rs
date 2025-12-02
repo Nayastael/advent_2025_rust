@@ -1,10 +1,10 @@
 pub use crate::errors::AdventError;
 pub use itertools::{self, Itertools};
+pub use std::fmt;
 pub use std::fmt::Debug;
 pub use std::fs::File;
 use std::io::Read;
 pub use std::io::{BufRead, BufReader};
-pub use std::fmt;
 
 pub fn get_lines_as_vec_string(path: String) -> Result<Vec<String>, AdventError> {
     let file = File::open(path)?;
@@ -72,7 +72,6 @@ pub fn print_sol_1<T: Debug>(sol: T) {
 pub fn print_sol_2<T: Debug>(sol: T) {
     println!("Part 2 solution : {:?}", sol);
 }
-
 
 #[derive(Debug, Default, Clone)]
 struct _Pos {

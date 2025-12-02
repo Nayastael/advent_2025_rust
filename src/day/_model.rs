@@ -17,8 +17,9 @@ mod tests {
     #[test]
     #[ignore]
     fn test_part_1_ok() {
-        let _lines = get_lines_as_vec_string(format!(r"ressources/test/day_{}", CFG_DAY).to_owned())
-            .unwrap();
+        let _lines =
+            get_lines_as_vec_string(format!(r"ressources/test/day_{}", CFG_DAY).to_owned())
+                .unwrap();
         //solve
         let checksum = 0;
         assert_eq!(
