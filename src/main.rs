@@ -33,6 +33,7 @@ fn main() -> Result<(), AdventError> {
     match args.day {
         1 => day::day_1::solve()?,
         2 => day::day_2::solve()?,
+        3 => day::day_3::solve()?,
         _ => println!("Not implemented yet"),
     }
 
