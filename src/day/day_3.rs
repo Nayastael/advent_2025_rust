@@ -28,7 +28,7 @@ pub fn largest_inside_line(lines: Vec<String>) -> u32 {
         let mut c1 = 0;
         let mut c2 = 0;
 
-        println!("line {:?}", line);
+        //println!("line {:?}", line);
         //Start
         for (p, c) in line.chars().enumerate() {
             let c_int = c.to_string().parse::<u32>().expect("Not a valid u32");
@@ -38,33 +38,33 @@ pub fn largest_inside_line(lines: Vec<String>) -> u32 {
             }
         }
 
-        println!("c1 {:?} pos1 {:?}", c1, pos1);
+        // println!("c1 {:?} pos1 {:?}", c1, pos1);
 
         //End
         if pos1 + 1 == line.len() {
             //Left
             for c in line[..pos1].chars() {
-                println!("Left c {:?} ", c);
+                //println!("Left c {:?} ", c);
                 let c_int = c.to_string().parse::<u32>().expect("Not a valid u32");
                 if c_int > c2 {
                     c2 = c_int;
                 }
-                println!("Left c2 {:?} ", c2);
+                //println!("Left c2 {:?} ", c2);
             }
             res += (c2 * 10) + c1;
         } else {
             //Right
             for c in line[pos1 + 1..].chars() {
-                println!("Right c {:?} ", c);
+                //println!("Right c {:?} ", c);
                 let c_int = c.to_string().parse::<u32>().expect("Not a valid u32");
                 if c_int > c2 {
                     c2 = c_int;
                 }
-                println!("Right c2 {:?} ", c2);
+                //println!("Right c2 {:?} ", c2);
             }
             res += (c1 * 10) + c2;
         }
-        println!("res {:?} ", res);
+        //println!("res {:?} ", res);
     }
 
     res
