@@ -7,7 +7,19 @@ pub fn solve() -> Result<(), AdventError> {
     //data
     let lines = get_lines_as_vec_string(format!(r"ressources/day_{}", CFG_DAY).to_owned())?;
 
+    let res = todo_1();
+
+    print_sol_1(res);
+
+    print_sol_2(res);
+
     Ok(())
+}
+
+pub fn todo_1() -> u32 {
+    let mut res = 0;
+
+    res
 }
 
 #[cfg(test)]
@@ -27,7 +39,7 @@ mod tests {
             checksum,
             "{}",
             format!(
-                r"\nTest data for partie 1.\nsee https://adventofcode.com/2024/day/{}",
+                r"\nTest data for partie 1.\nsee https://adventofcode.com/2025/day/{}",
                 CFG_DAY
             )
         );
