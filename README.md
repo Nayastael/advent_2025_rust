@@ -3,7 +3,6 @@ Advent_of_code_2025
 
 
 
-
 ## Launch 
 
 
@@ -22,10 +21,12 @@ Options:
 
 ## Test  
 
+[![Rust](https://github.com/Nayastael/advent_2025_rust/actions/workflows/rust.yml/badge.svg)](https://github.com/Nayastael/advent_2025_rust/actions/workflows/rust.yml)
+
+
 ```bash
 cargo test
 ```
-
 
 
 TODO :
