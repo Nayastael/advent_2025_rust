@@ -34,6 +34,7 @@ fn main() -> Result<(), AdventError> {
         1 => day::day_1::solve()?,
         2 => day::day_2::solve()?,
         3 => day::day_3::solve()?,
+        4 => day::day_4::solve()?,
         _ => println!("Not implemented yet"),
     }
 
